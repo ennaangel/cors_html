@@ -1,0 +1,73 @@
+
+h1{
+	text-align: center;
+	font-size: 175%;
+}
+
+body{
+	background-color:green;
+}
+
+.tit{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background-color: yellow;
+	width: 30%;
+	text-align: center;
+	font-size: 125%;
+	
+	border-style:solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+
+section{
+	background-color: Chartreuse;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;	
+	position: relative;
+	padding: 3px;
+	padding-top: 30px;
+	box-sizing: border-box;
+}	
+
+#Beef{
+	background-color: red;
+}
+
+#Pizza{
+	background-color: yellow;
+}
+
+#Sushi{
+	background-color: orange;
+}
+
+@media (min-width: 992px){
+section{
+	width: 31%;
+	margin: 1%;
+	float: left;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+section{
+	width: 47%;
+	margin: 1.5%;
+	float: left;
+}
+section:last-child:nth-child(even){
+	width: 97%
+}	
+}
+
+
+@media (max-width: 767px){
+section{
+	margin: 6px;
+}
+}

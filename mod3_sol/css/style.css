@@ -1,0 +1,33 @@
+
+#header-nav{
+	background-color: white;
+}
+
+#menu{
+	color: white;
+}	
+
+body{
+	background-color:#61122f;
+}
+
+.tit{
+	text-align: center;
+	font-size: 125%;
+}
+
+.container{
+	background-color: green;
+	width:80%;
+}	
+
+section{
+	background-color: Chartreuse;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;	
+	padding: 3px;
+	padding-top: 15px;
+	box-sizing: border-box;
+	
+}	

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<h1>
+Calculates cost of Agony Resist
+</h1>
+
+<div>
+	Costs of this thing is: <span id="moneyz"> </pan>
+<!-- https://api.guildwars2.com/v2/commerce/prices/19684 -->
+	
+</div>
+
+<script>
+	function Costs() {
+		var xhtml = new XMLHttpRequest();
+			xhtml.open("GET", "https://api.guildwars2.com/v2/commerce/prices/19684", true);
+			console.log(xhtml)
+		var gwdat = xhtml.responseText;
+		
+		console.log(gwdat);
+		cos = gwdat.sells.unit_price;
+		mon = 5* cos;
+		console.log(cos);
+		console.log(mon);
+		return mon;
+	}
+	
+	document.getElementById("moneyz").innerHTML = Costs();
+	
+</script>
+
+</body>
+</html>

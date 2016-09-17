@@ -2,6 +2,7 @@
 	function Costs() {
 		var xhtml = new XMLHttpRequest();
 			xhtml.open("GET", "https://api.guildwars2.com/v2/commerce/prices/19684", true);
+			xhtml.send(null);
 			console.log(xhtml)
 		var gwdat = xhtml.responseText;
 		

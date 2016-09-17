@@ -6,8 +6,8 @@
 		var gwdat = xhtml.responseText;
 		
 		console.log(gwdat);
-		var = cos = gwdat.sells.unit_price;
-		var = mon = 5* cos;
+		var cos = gwdat.sells.unit_price;
+		var mon = 5* cos;
 		console.log(cos);
 		console.log(mon);
 		return mon;

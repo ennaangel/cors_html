@@ -1,3 +1,19 @@
 body {
     background-color: lightblue;
 }
+
+.right {
+}
+
+.subsec{
+    width: 300px;
+    background-color: Tomato;
+    border: 10px;
+}
+
+#HTML {
+}
+
+h3 {
+    text-align: center;
+}

@@ -12,13 +12,13 @@ body {
     width: 300px;
     background-color: Tomato;
     border: 10px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 #HTML {
     background-color: Salmon;
     width: 350px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 h3 {

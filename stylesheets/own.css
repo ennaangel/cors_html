@@ -6,6 +6,7 @@ body {
 }
 
 .subsec{
+    text-align: center;
     width: 300px;
     background-color: Tomato;
     border: 10px;
@@ -19,6 +20,7 @@ h3 {
 }
 
 .btn{
+    text-align: center;
     display: inline-block;
     width: 250px;
     border: 2px;

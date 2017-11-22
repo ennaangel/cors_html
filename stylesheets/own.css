@@ -7,12 +7,16 @@ body {
 
 .subsec{
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     background-color: Tomato;
     border: 10px;
 }
 
 #HTML {
+    background-color: Salmon;
+    width: 350px
 }
 
 h3 {

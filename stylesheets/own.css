@@ -17,3 +17,10 @@ body {
 h3 {
     text-align: center;
 }
+
+.btn{
+    display: inline-block;
+    width: 250px;
+    border: 2px;
+    background-color: White;
+}

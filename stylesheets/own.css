@@ -23,6 +23,7 @@ h3 {
     text-align: center;
     width: 250px;
     border-width: 5px;
+    border-color: Black;
     display: inline-block;
     background-color: White;
 }

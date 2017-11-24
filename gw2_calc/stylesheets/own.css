@@ -11,14 +11,16 @@ body {
   text-align: center;
   width: 70%;
   margin: auto;
-  
+  font-size: 9px;  
 }
 
 .lecode {
   background-color: White;
-  width: 70%;
+  width: 40%;
   margin: auto;
   margin-top: 15px
+  padding: 5px;
+  border: 2px solid DarkSlateGray ;
 }
 
 #content{

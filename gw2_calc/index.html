@@ -5,15 +5,25 @@
 </head>
 
 <body>
+
+<section id="gw2agon">	
 <h1>
 Calculates cost of Agony Resist
 </h1>
 
-<div>
+<section class="expl">
+	This small Javascript experiment makes use of the < href="https://wiki.guildwars2.com/wiki/API:Main"> Guildwars2 API </a> to pull
+	about the cost of a single item(infusion) and displays it. Subsequently, it calculates the total price to create a +9 infusion 
+	from the current infusion item using the basic equation seen below.
+	<div class="eq"> Total Cost = (Cost of a single infusion)*(Number of infusions needed) + Base cost of upgrading </div>
+</section>
+	
+<div class="lecode">
 	Costs of this thing is: <span id="moneyz"> </pan>
 <!-- https://api.guildwars2.com/v2/commerce/prices/19684 -->
 	
 </div>
+</section>	
 
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

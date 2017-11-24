@@ -8,6 +8,8 @@ body {
 
 .eq {
   background-color: White;
+  text-align: center;
+  width: 300px;
   
 }
 
@@ -15,3 +17,12 @@ body {
   
 }
 
+#content{
+  width: 70%;
+  margin: auto;
+  
+}
+
+#gw2agon{
+  border: 2px solid Tomato;
+}

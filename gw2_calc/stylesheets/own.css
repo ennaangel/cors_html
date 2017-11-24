@@ -11,7 +11,9 @@ body {
   text-align: center;
   width: 70%;
   margin: auto;
-  font-size: 9px;  
+  font-size: 11px;  
+  margin-top:10px;
+  margin-bottom:10px;
 }
 
 .lecode {
@@ -20,7 +22,7 @@ body {
   margin: auto;
   margin-top: 15px
   padding: 5px;
-  border: 2px solid DarkSlateGray ;
+  border: 2px solid DarkSlateGray;
 }
 
 #content{
@@ -30,7 +32,6 @@ body {
 }
 
 #gw2agon{
-  
   border: 2px solid Tomato;
   padding: 30px
 }

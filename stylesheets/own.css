@@ -2,6 +2,10 @@ body {
     background-color: lightblue;
 }
 
+#content{
+    width: 70%
+}
+
 .right {
 }
 
@@ -34,3 +38,4 @@ h3 {
     border-color: Black;
     background-color: White;
 }
+

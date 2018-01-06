@@ -8,6 +8,9 @@ body {
 }
 
 .right {
+    background-color: Salmon;
+    width: 350px;
+    padding-bottom: 50px;
 }
 
 .subsec{

@@ -26,11 +26,16 @@ var xhttp = new XMLHttpRequest();
 	function Create(idcite,i){
 		
 		var aDiv = document.createElement('div');
-		
+			var aaDiv = document.createElement('div');
+			var abDiv = document.createElement('div');
 		var Title = idcite.title.title;
 		var auth = idcite.authors[0];
-		var atit = document.createTextNode(Title);
-		var aauth = document.createTextNode(auth);
+		aaDiv.innerHTML = Title;
+			aaDiv.style.float=left;
+			aaDiv.style.width=70% ;
+		abDiv.innerHTML = auth;
+			abDiv.style.float=left;
+		aDiv.appendChild(aaDiv)
 		console.log(i)
 		
 		//make colour change every second div
@@ -38,7 +43,7 @@ var xhttp = new XMLHttpRequest();
 		    aDiv.style.background="WhiteSmoke ";
 		    }
 		
-		aDiv.innerHTML = Title;
+
 		document.getElementById("Refs451647").appendChild(aDiv);
 	}
 		

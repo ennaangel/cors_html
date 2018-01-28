@@ -30,7 +30,7 @@ var xhttp = new XMLHttpRequest();
 		var atex = document.createTextNode(Title);
 		
 		//make colour change every second div
-		if (i=){
+		if (i%2=0){
 		    aDiv.style.background=:"WhiteSmoke ";
 		    }
 		

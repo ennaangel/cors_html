@@ -32,7 +32,7 @@ var xhttp = new XMLHttpRequest();
 		
 		//make colour change every second div
 		if (i%2 == 0){
-		    aDiv.style.background=:"WhiteSmoke ";
+		    aDiv.style.background="WhiteSmoke ";
 		    }
 		
 		aDiv.appendChild(atex);

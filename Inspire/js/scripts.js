@@ -41,9 +41,10 @@ var xhttp = new XMLHttpRequest();
 			abDiv.style.float="left";
 		console.log(i)
 		
-		//make colour change every second div
+		//make colour change every second div (kan vast cleaner)
 		if (i%2 == 0){
-		    aDiv.style.background="WhiteSmoke ";
+		    	aaDiv.style.background="WhiteSmoke ";
+			abDiv.style.background="WhiteSmoke ";
 		    }
 		
 

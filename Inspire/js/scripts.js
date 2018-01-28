@@ -7,8 +7,7 @@ var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
 			if (xhttp.readyState == 4 && xhttp.status == 200) {//wait till response
 
-				var idcite 
-        idcite = JSON.parse(xhttp.response); //read in JSON
+				var idcite = JSON.parse(xhttp.response); //read in JSON
         
         console.log(idcite);
 			}

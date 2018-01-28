@@ -28,4 +28,5 @@ for (var i = 0; i < idcite.length; i++) {
 		aDiv.appendChild(atex);
 		
 		document.getElementById("Refs451647").appendChild(aDiv);
+	}
 		

@@ -34,7 +34,7 @@ var xhttp = new XMLHttpRequest();
 		aDiv.appendChild(aaDiv)
 		aDiv.appendChild(abDiv)
 	
-		aaDiv.innerHTML = Title;
+		aaDiv.innerHTML = <a href="http://inspirehep.net/record/"+recid>Title</a>;
 			aaDiv.style.float="left";
 			aaDiv.style.width="70%";
 		abDiv.innerHTML = auth;

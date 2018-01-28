@@ -2,7 +2,7 @@
 //Obtain JSON data
 var id = "451647"
 var xhttp = new XMLHttpRequest();	
-	xhttp.open("GET", "https://inspirehep.net/search?p=refersto:recid:"+id+"&of=recjson&ot=title,recid,publication_info", true); //Use https to solve the mixed content problem
+	xhttp.open("GET", "https://inspirehep.net/search?p=refersto:recid:"+id+"&of=recjson&ot=title,recid,authors", true); //Use https to solve the mixed content problem
 	xhttp.send(null); //make request
 	xhttp.onreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {//wait till response
@@ -28,9 +28,9 @@ var xhttp = new XMLHttpRequest();
 		var aDiv = document.createElement('div');
 		
 		var Title = idcite.title.title;
-		var year = idcite.publication_info.year;
+		var auth = idcite.authors[0];
 		var atit = document.createTextNode(Title);
-		var ayear = document.createTextNode(year);
+		var aauth = document.createTextNode(auth);
 		console.log(i)
 		
 		//make colour change every second div

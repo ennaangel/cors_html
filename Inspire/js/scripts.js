@@ -34,7 +34,7 @@ var xhttp = new XMLHttpRequest();
 		aDiv.appendChild(aaDiv)
 		aDiv.appendChild(abDiv)
 		
-		var rec = String(recid)
+		var rec = String(idcite.recid)
 		var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">Title</a>"'
 		aaDiv.innerHTML = urlll;
 			aaDiv.style.float="left";

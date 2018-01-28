@@ -11,3 +11,4 @@ var xhttp = new XMLHttpRequest();
         idcite = JSON.parse(xhttp.response); //read in JSON
         
         console.log(idcite);
+			}

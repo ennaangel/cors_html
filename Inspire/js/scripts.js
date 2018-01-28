@@ -12,7 +12,7 @@ var xhttp = new XMLHttpRequest();
 			
 		var leng = idcite.length;
 		var lenn = leng.toString();
-		var beg = document.createTextNode("This article as been cited "+lenn+"times.");
+		var beg = document.createTextNode("This article as been cited "+lenn+" times.");
 		document.getElementById("Refs451647").appendChild(beg);
 		
 		console.log("Starting for loop")
@@ -27,10 +27,14 @@ var xhttp = new XMLHttpRequest();
 		
 		var aDiv = document.createElement('div');
 		var Title = idcite.title.title
-		
 		var atex = document.createTextNode(Title);
-		aDiv.appendChild(atex);
 		
+		//make colour change every second div
+		if (i=){
+		    aDiv.style.background=:"WhiteSmoke ";
+		    }
+		
+		aDiv.appendChild(atex);
 		document.getElementById("Refs451647").appendChild(aDiv);
 	}
 		

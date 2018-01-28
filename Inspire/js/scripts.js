@@ -9,16 +9,21 @@ var xhttp = new XMLHttpRequest();
 		var idcite = JSON.parse(xhttp.response); //read in JSON
         	
         	console.log(idcite);
+			
+		var leng = idcite.length;
+		var lenn = leng.toString();
+		var beg = document.createTextNode("This article as been cited "+lenn+"times.");
+		document.getElementById("Refs451647").appendChild(beg);
 		
 		console.log("Starting for loop")
-		for (var i = 0; i < idcite.length; i++) {	
-			Create(idcite[i]);
+		for (var i = 0; i < leng; i++) {	
+			Create(idcite[i],i);
 			};
 		}
 		};
 
 
-	function Create(idcite){
+	function Create(idcite,i){
 		
 		var aDiv = document.createElement('div');
 		var Title = idcite.title.title

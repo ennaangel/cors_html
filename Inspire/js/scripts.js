@@ -30,12 +30,15 @@ var xhttp = new XMLHttpRequest();
 			var abDiv = document.createElement('div');
 		var Title = idcite.title.title;
 		var auth = idcite.authors[0];
+
+		aDiv.appendChild(aaDiv)
+		aDiv.appendChild(abDiv)
+	
 		aaDiv.innerHTML = Title;
 			aaDiv.style.float=left;
-			aaDiv.style.width=70% ;
+			aaDiv.style.width= 70% ;
 		abDiv.innerHTML = auth;
 			abDiv.style.float=left;
-		aDiv.appendChild(aaDiv)
 		console.log(i)
 		
 		//make colour change every second div

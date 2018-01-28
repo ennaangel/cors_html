@@ -29,10 +29,7 @@ var xhttp = new XMLHttpRequest();
 		var Title = idcite.title.title
 		var atex = document.createTextNode(Title);
 		
-		//make colour change every second div
-		if (i%2=0){
-		    aDiv.style.background=:"WhiteSmoke ";
-		    }
+
 		
 		aDiv.appendChild(atex);
 		document.getElementById("Refs451647").appendChild(aDiv);

@@ -12,3 +12,4 @@ var xhttp = new XMLHttpRequest();
         
         console.log(idcite);
 			}
+			}

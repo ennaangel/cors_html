@@ -2,7 +2,7 @@
 
 var id = "451647"
 var xhttp = new XMLHttpRequest();	
-			xhttp.open("GET", "http://inspirehep.net/search?p=refersto:recid:"+id+"&of=recjson&ot=recid", true);
+			xhttp.open("GET", "https://inspirehep.net/search?p=refersto:recid:"+id+"&of=recjson&ot=recid", true);
 			xhttp.send(null); //make request
 			xhttp.onreadystatechange = function() {
 			if (xhttp.readyState == 4 && xhttp.status == 200) {//wait till response

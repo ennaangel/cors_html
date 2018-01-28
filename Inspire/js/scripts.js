@@ -2,7 +2,7 @@
 //Obtain JSON data
 var id = "451647"
 var xhttp = new XMLHttpRequest();	
-	xhttp.open("GET", "https://inspirehep.net/search?p=refersto:recid:"+id+"&of=recjson&ot=title,recid", true); //Use https to solve the mixed content problem
+	xhttp.open("GET", "https://inspirehep.net/search?p=refersto:recid:"+id+"&of=recjson&ot=title,recid,publication_info", true); //Use https to solve the mixed content problem
 	xhttp.send(null); //make request
 	xhttp.onreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {//wait till response
@@ -22,12 +22,15 @@ var xhttp = new XMLHttpRequest();
 		}
 		};
 
-
+//Function that creates the div for every article
 	function Create(idcite,i){
 		
 		var aDiv = document.createElement('div');
-		var Title = idcite.title.title
-		var atex = document.createTextNode(Title);
+		
+		var Title = idcite.title.title;
+		var year = idcite.publication_info.year;
+		var atit = document.createTextNode(Title);
+		var ayear = document.createTextNode(year);
 		console.log(i)
 		
 		//make colour change every second div
@@ -35,7 +38,7 @@ var xhttp = new XMLHttpRequest();
 		    aDiv.style.background="WhiteSmoke ";
 		    }
 		
-		aDiv.appendChild(atex);
+		aDiv.innerHTML = Title;
 		document.getElementById("Refs451647").appendChild(aDiv);
 	}
 		

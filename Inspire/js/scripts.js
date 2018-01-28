@@ -29,7 +29,7 @@ var xhttp = new XMLHttpRequest();
 			var aaDiv = document.createElement('div');
 			var abDiv = document.createElement('div');
 		var Title = idcite.title.title;
-		var auth = idcite.authors[0];
+		var auth = idcite.authors[0].full_name;
 
 		aDiv.appendChild(aaDiv)
 		aDiv.appendChild(abDiv)

@@ -1,10 +1,12 @@
  <!DOCTYPE html>
 <html>
-<head>
-<title>Inspire</title>
-</head>
+  <head>
+  <title>Inspire</title>
+  <link rel="stylesheet" href="./stylesheets/own.css" type="text/css">
+  <script src="js/scripts.js"></script>
+  </head>
 <body>
-
+<section id="page">
 <h1>Inspire API work</h1>
  <section>
   <p>
@@ -14,10 +16,9 @@
 <div>  <a href="http://inspirehep.net/record/451647?of=recjson&ot=recid,title,reference">Link</a> to obtain inspire data on record id, title, and reference list. </div>
 <div><a href= "http://inspirehep.net/search?p=refersto:recid:451647&of=recjson&ot=title,recid"> Link </a> to obtain list of people that cite that same paper </div>
 
- 
- <div id="Refs451647"></div>
- 
- <script src="js/scripts.js"></script>
-
+ <section id="reflist">
+   <div id="Refs451647"></div>
+ </section>
+</section>
  </body>
 </html> 

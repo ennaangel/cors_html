@@ -9,12 +9,13 @@ var xhttp = new XMLHttpRequest();
 		var idcite = JSON.parse(xhttp.response); //read in JSON
         	
         	console.log(idcite);
-			
+		
+		console.log("Starting for loop")
 		for (var i = 0; i < idcite.length; i++) {	
-		Create(idcite[i]);
-		};
-			}
+			Create(idcite[i]);
 			};
+		}
+		};
 
 
 	function Create(idcite){

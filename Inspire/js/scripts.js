@@ -1,6 +1,8 @@
 
 //Obtain JSON data
 var id = "451647"
+
+//Pulling people that refered to article with this id and showing them.
 var xhttp = new XMLHttpRequest();	
 	xhttp.open("GET", "https://inspirehep.net/search?p=refersto:recid:"+id+"&of=recjson&ot=title,recid,authors", true); //Use https to solve the mixed content problem
 	xhttp.send(null); //make request
@@ -9,32 +11,33 @@ var xhttp = new XMLHttpRequest();
 		var idcite = JSON.parse(xhttp.response); //read in JSON
         	
         	console.log(idcite);
-			
+		
+		var loc1 = "Refs451647"
 		var leng = idcite.length;
 		var lenn = leng.toString();
 		var beg = document.createTextNode("This article as been cited "+lenn+" times.");
-		document.getElementById("Refs451647").appendChild(beg);
+		document.getElementById(loc1).appendChild(beg);
 		
 		console.log("Starting for loop")
 		for (var i = 0; i < leng; i++) {	
-			Create(idcite[i],i);
+			Create(idcite[i],i,loc1);
 			};
 		}
 		};
 
 //Function that creates the div for every article
-	function Create(idcite,i){
+	function Create(cite,i,loc){
 		
 		var aDiv = document.createElement('div');
 			var aaDiv = document.createElement('div');
 			var abDiv = document.createElement('div');
-		var Title = idcite.title.title;
-		var auth = idcite.authors[0].full_name;
+		var Title = cite.title.title;
+		var auth = cite.authors[0].full_name;
 
 		aDiv.appendChild(aaDiv)
 		aDiv.appendChild(abDiv)
 		
-		var rec = String(idcite.recid)
+		var rec = String(cite.recid)
 		var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">'+Title+'</a>'
 		aaDiv.innerHTML = urlll;
 			aaDiv.style.float="left";
@@ -51,6 +54,6 @@ var xhttp = new XMLHttpRequest();
 		    }
 		
 
-		document.getElementById("Refs451647").appendChild(aDiv);
+		document.getElementById(loc1).appendChild(aDiv);
 	}
 		

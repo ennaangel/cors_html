@@ -76,8 +76,11 @@ var xhttp = new XMLHttpRequest();
 		aDiv.appendChild(aaDiv)
 		aDiv.appendChild(abDiv)
 		
-		var rec = String(cite.recid)
+		anDiv.style.width="5%";
+		anDiv.style.float="left";
+		
 		if (n ==1){
+				var rec = String(cite.recid)
 				var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">'+Title+'</a>'
 				aaDiv.style.width="70%";
 				abDiv.style.width="24%";
@@ -86,8 +89,6 @@ var xhttp = new XMLHttpRequest();
 				aaDiv.style.width="50%";
 				abDiv.style.width="44%";
 				}
-			anDiv.style.width="5%";
-			anDiv.style.float="left";
 			anDiv.innerHTML = String(i)
 			aaDiv.innerHTML = urlll;
 			aaDiv.style.float="left";
@@ -100,6 +101,7 @@ var xhttp = new XMLHttpRequest();
 		    	aaDiv.style.background="WhiteSmoke ";
 			abDiv.style.background="WhiteSmoke ";
 			aDiv.style.background="WhiteSmoke ";
+			anDiv.style.background="WhiteSmoke ";
 		    }
 		
 

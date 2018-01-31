@@ -16,8 +16,8 @@ var xhttp2 = new XMLHttpRequest();
 		var loc2 = "cites451647"
 		var dleng = dcite.length;
 		var dlenn = dleng.toString();
-		var beg = document.createTextNode("This article cites "+dlenn+" times.");
-		document.getElementById(loc2).appendChild(beg);
+		var dbeg = document.createTextNode("This article cites "+dlenn+" times.");
+		document.getElementById(loc2).appendChild(dbeg);
 		
 		console.log("Starting for loop")
 		for (var i = 0; i < dleng; i++) {	

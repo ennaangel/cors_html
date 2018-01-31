@@ -54,6 +54,6 @@ var xhttp = new XMLHttpRequest();
 		    }
 		
 
-		document.getElementById(loc1).appendChild(aDiv);
+		document.getElementById(loc).appendChild(aDiv);
 	}
 		

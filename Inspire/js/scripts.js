@@ -10,7 +10,7 @@ var xhttp2 = new XMLHttpRequest();
 	xhttp2.onreadystatechange = function() {
 		if (xhttp2.readyState == 4 && xhttp2.status == 200) {//wait till response
 		var adcite = JSON.parse(xhttp2.response); //read in JSON
-        	var dcite = adcite.reference
+        	var dcite = adcite[0].reference
         	console.log(dcite);
 		
 		var loc2 = "cites451647"

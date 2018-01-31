@@ -22,7 +22,7 @@ var xhttp2 = new XMLHttpRequest();
 		console.log("Starting for loop")
 		for (var j = 1; j < dleng; j++) {//starting at j=1 as first article has not title
 			console.log(dcite[j])
-			Create(dcite[j],j,loc2);
+			Create(dcite[j],j,loc2,2);
 			};
 		}
 		};
@@ -46,7 +46,7 @@ var xhttp = new XMLHttpRequest();
 		console.log("Starting for loop")
 		for (var i = 0; i < leng; i++) {
 			console.log(idcite[i])
-			Create(idcite[i],i,loc1);
+			Create(idcite[i],i,loc1,1);
 			};
 		}
 		};
@@ -56,22 +56,30 @@ var xhttp = new XMLHttpRequest();
 
 
 //Function that creates the div for every article
-	function Create(cite,i,loc){
+	function Create(cite,i,loc,n){
 		
 		var aDiv = document.createElement('div');
 			var aaDiv = document.createElement('div');
 			var abDiv = document.createElement('div');
-		var Title = cite.title.title;
-		console.log(Title)
-		var auth = cite.authors[0].full_name;
+		if (n==1){
+			var Title = cite.title.title;
+			var auth = cite.authors[0].full_name;
+		} else{
+			var Title = cite.title;
+			var auth = cite.authors;
+		}
+		console.log(Title)	
 		console.log(auth)
 
 		aDiv.appendChild(aaDiv)
 		aDiv.appendChild(abDiv)
 		
 		var rec = String(cite.recid)
-		// var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">'+Title+'</a>'
-		var urlll = Title
+		if (n ==1){
+			var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">'+Title+'</a>'
+			}else{
+				var urlll = Title
+				}
 		aaDiv.innerHTML = urlll;
 			aaDiv.style.float="left";
 			aaDiv.style.width="70%";

@@ -20,7 +20,7 @@ var xhttp2 = new XMLHttpRequest();
 		document.getElementById(loc2).appendChild(dbeg);
 		
 		console.log("Starting for loop")
-		for (var j = 1; j < dleng; j++) {//starting at j=1 as first article has not title
+		for (var j = 0; j < dleng; j++) {//starting at j=1 as first article has not title
 			console.log(dcite[j])
 			Create(dcite[j],j,loc2,2);
 			};

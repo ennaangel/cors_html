@@ -61,13 +61,16 @@ var xhttp = new XMLHttpRequest();
 			var aaDiv = document.createElement('div');
 			var abDiv = document.createElement('div');
 		var Title = cite.title.title;
+		console.log(Title)
 		var auth = cite.authors[0].full_name;
+		console.log(auth)
 
 		aDiv.appendChild(aaDiv)
 		aDiv.appendChild(abDiv)
 		
 		var rec = String(cite.recid)
-		var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">'+Title+'</a>'
+		// var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">'+Title+'</a>'
+		var urll = Title
 		aaDiv.innerHTML = urlll;
 			aaDiv.style.float="left";
 			aaDiv.style.width="70%";

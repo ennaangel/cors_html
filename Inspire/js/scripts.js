@@ -70,7 +70,7 @@ var xhttp = new XMLHttpRequest();
 		
 		var rec = String(cite.recid)
 		// var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">'+Title+'</a>'
-		var urll = Title
+		var urlll = Title
 		aaDiv.innerHTML = urlll;
 			aaDiv.style.float="left";
 			aaDiv.style.width="70%";

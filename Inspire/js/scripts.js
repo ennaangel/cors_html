@@ -25,14 +25,14 @@ var xhttp = new XMLHttpRequest();
 		}
 		};
 
-/*
+
 //Function that gives the cite list in cites451647
-var xhttp = new XMLHttpRequest();	
-	xhttp.open("GET", "https://inspirehep.net/record/"+id+"?of=recjson&ot=title,recid,authors,reference", true); //Use https to solve the mixed content problem
-	xhttp.send(null); //make request
-	xhttp.onreadystatechange = function() {
-		if (xhttp.readyState == 4 && xhttp.status == 200) {//wait till response
-		var adcite = JSON.parse(xhttp.response); //read in JSON
+var xhttp2 = new XMLHttpRequest();	
+	xhttp2.open("GET", "https://inspirehep.net/record/"+id+"?of=recjson&ot=title,recid,authors,reference", true); //Use https to solve the mixed content problem
+	xhttp2.send(null); //make request
+	xhttp2.onreadystatechange = function() {
+		if (xhttp2.readyState == 4 && xhttp.status == 200) {//wait till response
+		var adcite = JSON.parse(xhttp2.response); //read in JSON
         	var dcite = adcite.reference
         	console.log(dcite);
 		
@@ -48,7 +48,7 @@ var xhttp = new XMLHttpRequest();
 			};
 		}
 		};
-*/
+
 
 
 //Function that creates the div for every article

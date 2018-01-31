@@ -47,6 +47,7 @@ var xhttp = new XMLHttpRequest();
 		if (i%2 == 0){
 		    	aaDiv.style.background="WhiteSmoke ";
 			abDiv.style.background="WhiteSmoke ";
+			aDiv.style.background="WhiteSmoke ";
 		    }
 		
 

@@ -76,14 +76,15 @@ var xhttp = new XMLHttpRequest();
 		
 		var rec = String(cite.recid)
 		if (n ==1){
-			var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">'+Title+'</a>'
+				var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">'+Title+'</a>'
+				aaDiv.style.width="70%";
 			}else{
 				var urlll = Title
+				aaDiv.style.width="50%";
 				}
-		aaDiv.innerHTML = urlll;
+			aaDiv.innerHTML = urlll;
 			aaDiv.style.float="left";
-			aaDiv.style.width="70%";
-		abDiv.innerHTML = auth;
+			abDiv.innerHTML = auth;
 			abDiv.style.float="left";
 		console.log(i)
 		

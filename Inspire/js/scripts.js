@@ -78,9 +78,11 @@ var xhttp = new XMLHttpRequest();
 		if (n ==1){
 				var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">'+Title+'</a>'
 				aaDiv.style.width="70%";
+				abDiv.style.width="29%";
 			}else{
 				var urlll = Title
 				aaDiv.style.width="50%";
+				abDiv.style.width="49%";
 				}
 			aaDiv.innerHTML = urlll;
 			aaDiv.style.float="left";

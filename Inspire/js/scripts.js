@@ -2,28 +2,6 @@
 //Obtain JSON data
 var id = "451647"
 
-//Pulling people that refered to article with this id and showing them.
-var xhttp = new XMLHttpRequest();	
-	xhttp.open("GET", "https://inspirehep.net/search?p=refersto:recid:"+id+"&of=recjson&ot=title,recid,authors", true); //Use https to solve the mixed content problem
-	xhttp.send(null); //make request
-	xhttp.onreadystatechange = function() {
-		if (xhttp.readyState == 4 && xhttp.status == 200) {//wait till response
-		var idcite = JSON.parse(xhttp.response); //read in JSON
-        	
-        	console.log(idcite);
-		
-		var loc1 = "Refs451647"
-		var leng = idcite.length;
-		var lenn = leng.toString();
-		var beg = document.createTextNode("This article as been cited "+lenn+" times.");
-		document.getElementById(loc1).appendChild(beg);
-		
-		console.log("Starting for loop")
-		for (var i = 0; i < leng; i++) {	
-			Create(idcite[i],i,loc1);
-			};
-		}
-		};
 
 //Function that gives the cite list in cites451647
 var xhttp = new XMLHttpRequest();	
@@ -47,6 +25,31 @@ var xhttp = new XMLHttpRequest();
 			};
 		}
 		};
+
+
+//Pulling people that refered to article with this id and showing them.
+var xhttp = new XMLHttpRequest();	
+	xhttp.open("GET", "https://inspirehep.net/search?p=refersto:recid:"+id+"&of=recjson&ot=title,recid,authors", true); //Use https to solve the mixed content problem
+	xhttp.send(null); //make request
+	xhttp.onreadystatechange = function() {
+		if (xhttp.readyState == 4 && xhttp.status == 200) {//wait till response
+		var idcite = JSON.parse(xhttp.response); //read in JSON
+        	
+        	console.log(idcite);
+		
+		var loc1 = "Refs451647"
+		var leng = idcite.length;
+		var lenn = leng.toString();
+		var beg = document.createTextNode("This article as been cited "+lenn+" times.");
+		document.getElementById(loc1).appendChild(beg);
+		
+		console.log("Starting for loop")
+		for (var i = 0; i < leng; i++) {	
+			Create(idcite[i],i,loc1);
+			};
+		}
+		};
+
 
 
 //Function that creates the div for every article
@@ -79,5 +82,5 @@ var xhttp = new XMLHttpRequest();
 		
 
 		document.getElementById(loc).appendChild(aDiv);
-	}
+	};
 		

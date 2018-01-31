@@ -21,7 +21,7 @@ var xhttp2 = new XMLHttpRequest();
 		
 		console.log("Starting for loop")
 		for (var j = 1; j < dleng; j++) {//starting at j=1 as first article has not title
-			console.log(dcit[j])
+			console.log(dcite[j])
 			Create(dcite[j],j,loc2);
 			};
 		}

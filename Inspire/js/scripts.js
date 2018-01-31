@@ -44,7 +44,8 @@ var xhttp = new XMLHttpRequest();
 		document.getElementById(loc1).appendChild(beg);
 		
 		console.log("Starting for loop")
-		for (var i = 0; i < leng; i++) {	
+		for (var i = 0; i < leng; i++) {
+			console.log(idcite[i])
 			Create(idcite[i],i,loc1);
 			};
 		}

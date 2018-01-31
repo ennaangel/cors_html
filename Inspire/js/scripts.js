@@ -8,7 +8,7 @@ var xhttp2 = new XMLHttpRequest();
 	xhttp2.open("GET", "https://inspirehep.net/record/"+id+"?of=recjson&ot=title,recid,authors,reference", true); //Use https to solve the mixed content problem
 	xhttp2.send(null); //make request
 	xhttp2.onreadystatechange = function() {
-		if (xhttp2.readyState == 4 && xhttp.status == 200) {//wait till response
+		if (xhttp2.readyState == 4 && xhttp2.status == 200) {//wait till response
 		var adcite = JSON.parse(xhttp2.response); //read in JSON
         	var dcite = adcite.reference
         	console.log(dcite);

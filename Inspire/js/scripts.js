@@ -4,7 +4,7 @@ var id = "451647"
 
 //Pulling people that refered to article with this id and showing them.
 var xhttp = new XMLHttpRequest();	
-	xhttp.open("GET", "https://inspirehep.net/search?p=refersto:recid:"+id+"&of=recjson&ot=title,recid,authors", true); //Use https to solve the mixed content problem
+	xhttp.open("GET", "https://inspirehep.net/search?p=refersto:recid:"+id+"&of=recjson&ot=title,recid,authors", false); //Use https to solve the mixed content problem
 	xhttp.send(null); //make request
 	xhttp.onreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {//wait till response
@@ -24,6 +24,30 @@ var xhttp = new XMLHttpRequest();
 			};
 		}
 		};
+
+//Function that gives the cite list in cites451647
+var xhttp = new XMLHttpRequest();	
+	xhttp.open("GET", "https://inspirehep.net/record/"+id+"?of=recjson&ot=title,recid,authors,reference", false); //Use https to solve the mixed content problem
+	xhttp.send(null); //make request
+	xhttp.onreadystatechange = function() {
+		if (xhttp.readyState == 4 && xhttp.status == 200) {//wait till response
+		var adcite = JSON.parse(xhttp.response); //read in JSON
+        	var dcite = adcite.reference
+        	console.log(dcite);
+		
+		var loc2 = "cites451647"
+		var dleng = dcite.length;
+		var dlenn = dleng.toString();
+		var beg = document.createTextNode("This article cites "+dlenn+" times.");
+		document.getElementById(loc2).appendChild(beg);
+		
+		console.log("Starting for loop")
+		for (var i = 0; i < dleng; i++) {	
+			Create(dcite[i],i,loc2);
+			};
+		}
+		};
+
 
 
 //Function that creates the div for every article
@@ -59,27 +83,3 @@ var xhttp = new XMLHttpRequest();
 	};
 
 
-/*
-//Function that gives the cite list in cites451647
-var xhttp = new XMLHttpRequest();	
-	xhttp.open("GET", "https://inspirehep.net/record/"+id+"?of=recjson&ot=title,recid,authors,reference", true); //Use https to solve the mixed content problem
-	xhttp.send(null); //make request
-	xhttp.onreadystatechange = function() {
-		if (xhttp.readyState == 4 && xhttp.status == 200) {//wait till response
-		var adcite = JSON.parse(xhttp.response); //read in JSON
-        	var dcite = adcite.reference
-        	console.log(dcite);
-		
-		var loc2 = "cites451647"
-		var dleng = dcite.length;
-		var dlenn = dleng.toString();
-		var beg = document.createTextNode("This article cites "+dlenn+" times.");
-		document.getElementById(loc2).appendChild(beg);
-		
-		console.log("Starting for loop")
-		for (var i = 0; i < dleng; i++) {	
-			Create(dcite[i],i,loc2);
-			};
-		}
-		};
-*/

@@ -58,9 +58,10 @@ var xhttp = new XMLHttpRequest();
 //Function that creates the div for every article
 	function Create(cite,i,loc,n){
 		
-		var aDiv = document.createElement('div');
+		var aDiv = document.createElement('div'); //creates box and ads small boxes
 			var aaDiv = document.createElement('div');
 			var abDiv = document.createElement('div');
+			var anDiv = document.createElement('div');
 		if (n==1){
 			var Title = cite.title.title;
 			var auth = cite.authors[0].full_name;
@@ -70,7 +71,8 @@ var xhttp = new XMLHttpRequest();
 		}
 		console.log(Title)	
 		console.log(auth)
-
+		
+		aDiv.appendChild(anDiv)
 		aDiv.appendChild(aaDiv)
 		aDiv.appendChild(abDiv)
 		
@@ -78,12 +80,15 @@ var xhttp = new XMLHttpRequest();
 		if (n ==1){
 				var urlll = '<a href="http://inspirehep.net/record/"'+rec + '">'+Title+'</a>'
 				aaDiv.style.width="70%";
-				abDiv.style.width="29%";
+				abDiv.style.width="24%";
 			}else{
 				var urlll = Title
 				aaDiv.style.width="50%";
-				abDiv.style.width="49%";
+				abDiv.style.width="44%";
 				}
+			anDiv.style.width="5%";
+			anDiv.style.float="left";
+			anDiv.innerHTML = String(i)
 			aaDiv.innerHTML = urlll;
 			aaDiv.style.float="left";
 			abDiv.innerHTML = auth;

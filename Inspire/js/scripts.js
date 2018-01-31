@@ -94,6 +94,10 @@ var xhttp = new XMLHttpRequest();
 			aaDiv.style.float="left";
 			abDiv.innerHTML = auth;
 			abDiv.style.float="left";
+		
+			abDiv.style.min-height="100%"
+			anDiv.style.min-height="100%"
+			aaDiv.style.min-height="100%"	
 		console.log(i)
 		
 		//make colour change every second div (kan vast cleaner)

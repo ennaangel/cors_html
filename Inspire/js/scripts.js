@@ -14,10 +14,16 @@ var xhttp2 = new XMLHttpRequest();
         	console.log(dcite);
 		
 		var loc2 = "cites451647"
+		var loc3 = "geninfo"
 		var dleng = dcite.length;
 		var dlenn = dleng.toString();
 		var dbeg = document.createTextNode("This article cites "+dlenn+" times.");
 		document.getElementById(loc2).appendChild(dbeg);
+			
+		//General info
+		var info = document.createElement('div');
+			info.innerHTML = "The article: " + adcite[0].title.title + " has the id: " String(adcite[0].recid);
+			document.getElementById(loc1).appendChild(info);
 		
 		console.log("Starting for loop")
 		for (var j = 0; j < dleng; j++) {//starting at j=1 as first article has not title
@@ -42,6 +48,7 @@ var xhttp = new XMLHttpRequest();
 		var lenn = leng.toString();
 		var beg = document.createTextNode("This article as been cited "+lenn+" times.");
 		document.getElementById(loc1).appendChild(beg);
+			
 		
 		console.log("Starting for loop")
 		for (var i = 0; i < leng; i++) {

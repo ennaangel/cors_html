@@ -22,7 +22,7 @@ var xhttp2 = new XMLHttpRequest();
 			
 		//General info
 		var info = document.createElement('div');
-			info.innerHTML = "The article: " + adcite[0].title.title + " has the id: " String(adcite[0].recid);
+			info.innerHTML = "The article: " + adcite[0].title.title + " has the id: "+ String(adcite[0].recid);
 			document.getElementById(loc1).appendChild(info);
 		
 		console.log("Starting for loop")

@@ -23,7 +23,7 @@ var xhttp2 = new XMLHttpRequest();
 		//General info
 		var info = document.createElement('div');
 			info.innerHTML = "The article: " + adcite[0].title.title + " has the id: "+ String(adcite[0].recid);
-			document.getElementById(loc1).appendChild(info);
+			document.getElementById(loc3).appendChild(info);
 		
 		console.log("Starting for loop")
 		for (var j = 0; j < dleng; j++) {//starting at j=1 as first article has not title

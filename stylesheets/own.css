@@ -94,11 +94,12 @@ h3 {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color:#103050;
-    border-color:#105070;
+    border-color:#103050;
 }
 
 .sub{
     border-bottom: 2px solid #105070;
     border-top: 2px solid #105070;
+    color: #105070;
     font-size: 115%;
 }

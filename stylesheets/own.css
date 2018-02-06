@@ -47,7 +47,7 @@ h3 {
 /* Dropdown Button */
 .dropbtn {
     background-color: #102030;
-    color: 207090;
+    color:#207090;
     padding: 16px;
     font-size: 16px;
     border-style:solid;
@@ -98,6 +98,7 @@ h3 {
 }
 
 .sub{
-    background-color: Aquamarine;
+    border-bottom: 2px solid #105070;
+    border-top: 2px solid #105070;
     font-size: 115%;
 }

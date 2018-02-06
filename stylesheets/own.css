@@ -73,14 +73,18 @@ h3 {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color:#105070;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    background-color: #103050
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #703030}
+.dropdown-content a:hover {
+    background-color: #703030;
+    color: salmon;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {

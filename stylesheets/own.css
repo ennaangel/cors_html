@@ -58,7 +58,7 @@ h3 {
     text-decoration: none;
 }
 
-.navbar a:hover{
+.navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #703030;
     color: salmon;
 }

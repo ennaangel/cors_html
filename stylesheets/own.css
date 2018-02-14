@@ -127,7 +127,7 @@ h3 {
 }
 
 .sub{
-    float: none;
+    text-align: center;
     border-bottom: 2px solid #105070;
     border-top: 2px solid #105070;
     color: #207090;

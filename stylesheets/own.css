@@ -42,6 +42,15 @@ body {
     color: salmon;
 }
 
+.navb{
+        border: none;
+    background-color: #102030;
+    color:#207090;
+    padding: 16px;
+    font-size: 16px;
+    width: 154px;
+}
+
 /* Dropdown Button */
 .dropbtn {
     border: none;

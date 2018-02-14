@@ -44,6 +44,7 @@ body {
 
 /* Dropdown Button */
 .dropbtn {
+    border: none;
     background-color: #102030;
     color:#207090;
     padding: 16px;

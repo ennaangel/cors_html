@@ -99,7 +99,6 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color:#103050;
-    border-color:#103050;
 }
 
 /* Titles in dropdown */

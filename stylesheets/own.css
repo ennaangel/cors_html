@@ -43,12 +43,14 @@ body {
 }
 
 .navb{
-        border: none;
+    border: none;
     background-color: #102030;
     color:#207090;
     padding: 16px;
     font-size: 16px;
     width: 154px;
+    float: left;
+    overflow: hidden;
 }
 
 /* Dropdown Button */

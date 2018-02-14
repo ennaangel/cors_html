@@ -91,7 +91,7 @@ h3 {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    float: none;
+    clear: left;
     display: none;
     position: absolute;
     background-color: #103050;

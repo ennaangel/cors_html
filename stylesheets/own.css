@@ -20,6 +20,11 @@ body {
 */
 /*________________________ Begin Navbar ______________________________*/
 /* Navbar stuff */
+
+.navbar a{
+    text-decoration: none;
+}
+
 .navbar {
     overflow: hidden;
     background-color: #102030;

@@ -28,7 +28,6 @@ body {
 /*________________________ Begin Dropdown ______________________________*/
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #703030;
     color: salmon;
 }
 

@@ -18,6 +18,13 @@ body {
     background-color: White;
 }
 */
+#intro {
+    background-color:#105070;
+    margin-top:70px;
+    padding: 20px;
+    color: salmon;
+}
+
 /*________________________ Begin Navbar ______________________________*/
 /* Navbar stuff */
 

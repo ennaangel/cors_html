@@ -7,6 +7,27 @@
   width:70px;
 }
 
+#field{
+    padding:4px;
+    border: 2px solid grey;
+}
+
+#f1{
+    padding:4px;
+    border: 2px solid grey;
+}
+#f2{
+    padding:4px;
+    border: 2px solid grey;
+}
+#f3{
+    padding:4px;
+    border: 2px solid grey;
+}
+#f4{
+    padding:4px;
+    border: 2px solid grey;
+}
 
 /*________________________ Begin Navbar ______________________________*/
 /* Navbar stuff */

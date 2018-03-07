@@ -3,6 +3,7 @@
     margin: auto;
 }
 
+<!-- Layout form -->
 .finput{
   width:70px;
 }
@@ -27,6 +28,14 @@
 #f4{
     padding:4px;
     border: 2px solid grey;
+}
+
+#left{
+    width:80px;
+}
+
+#right{
+    width:80px;
 }
 
 /*________________________ Begin Navbar ______________________________*/

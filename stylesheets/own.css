@@ -48,6 +48,12 @@ body {
     text-align:center;
 }
 
+/* Change color of navbar links on hover */
+.navb a:hover {
+    background-color: #703030;
+    color: salmon;
+}
+
 /* Dropdown Button */
 .dropbtn {
     border: none;

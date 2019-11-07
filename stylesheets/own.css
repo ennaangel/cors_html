@@ -47,6 +47,7 @@ body {
     overflow: hidden;
     text-align:center;
     text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 /* Change color of navbar links on hover */

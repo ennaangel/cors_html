@@ -49,7 +49,7 @@ body {
 }
 
 /* Change color of navbar links on hover */
-.navb a:hover {
+.navb:hover {
     background-color: #703030;
     color: salmon;
 }

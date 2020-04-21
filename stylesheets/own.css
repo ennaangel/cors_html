@@ -1,10 +1,26 @@
 body {
     background-color:#102030;
+	background: linear-gradient(135deg,#03828a ,#102030,#102030 ,#65206d );
+	background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #content{
     width: 70%;
     margin: auto;
+}
+
+#bottomtext{
+    position: fixed;
+    bottom: 0;
+	font-size:60px;
+	color:#03828a;
+	font-family:Arial, Helvetica, sans-serif;
+	letter-spacing: -4px;
+}
+
+#bottomtext:hover{
+	color:salmon;
 }
 
 /*
@@ -27,7 +43,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #102030;
+    /*background-color: #102030;*/
 }
 
 /*________________________ Begin Dropdown ______________________________*/

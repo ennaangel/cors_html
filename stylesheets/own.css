@@ -10,13 +10,17 @@ body {
     margin: auto;
 }
 
+/*Bottom stuff */
+
 #bottomtext{
+	width:70%;
     position: fixed;
     bottom: 0;
 	font-size:60px;
 	color:#03828a;
 	font-family:Arial, Helvetica, sans-serif;
 	letter-spacing: -4px;
+	text-align: right;
 }
 
 #bottomtext:hover{

@@ -5,7 +5,7 @@ var id = "451647"
 //Function that gives the cite list in cites451647
 var xhttp2 = new XMLHttpRequest();	
 	console.log("Doing cite thingy")
-	xhttp2.open("GET", "https://inspirehep.net/record/"+id+"?of=recjson&ot=title,recid,authors,reference", true); //Use https to solve the mixed content problem
+	xhttp2.open("GET", "https://old.inspirehep.net/record/"+id+"?of=recjson&ot=title,recid,authors,reference", true); //Use https to solve the mixed content problem
 	xhttp2.send(null); //make request
 	xhttp2.onreadystatechange = function() {
 		if (xhttp2.readyState == 4 && xhttp2.status == 200) {//wait till response
@@ -17,12 +17,12 @@ var xhttp2 = new XMLHttpRequest();
 		var loc3 = "geninfo"
 		var dleng = dcite.length;
 		var dlenn = dleng.toString();
-		var dbeg = document.createTextNode("This article cites "+dlenn+" times.");
+		var dbeg = document.createTextNode("This article cites "+dlenn+" other articles.");
 		document.getElementById(loc2).appendChild(dbeg);
 			
 		//General info
 		var info = document.createElement('div');
-			info.innerHTML = "The article: " + adcite[0].title.title + " has the id: "+ String(adcite[0].recid);
+			info.innerHTML = "The article: <b>" + adcite[0].title.title + "</b> has the id: "+ String(adcite[0].recid);
 			document.getElementById(loc3).appendChild(info);
 		
 		console.log("Starting for loop")

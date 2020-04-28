@@ -50,7 +50,6 @@ body {
     /*background-color: #102030;*/
 }
 
-
 /*________________________ Begin Dropdown ______________________________*/
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -69,39 +68,6 @@ body {
     text-align:center;
     text-decoration: none;
     font-family:Arial, Helvetica, sans-serif;
-}
-
-
-.dropbtnnavb{
-	border: none;
-    background-color: #102030;
-	margin: 0px;
-	padding: 0px;
-}
-
-.dropbtnnavb a{
-	border: none;
-    color:#207090;
-    padding: 16px;
-    font-size: 16px;
-    width: 154px;
-    float: left;
-    overflow: hidden;
-    text-align:center;
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.dropdown:hover .dropbtnnavb {
-    background-color:#103050;
-}
-
-.dropdown:hover .dropbtnnavb a{
-    color:salmon;
-}
-
-.dropbtnnavb:hover a{
-	background-color: #703030;
 }
 
 /* Change color of navbar links on hover */
@@ -126,7 +92,12 @@ body {
     float: left;
     overflow: hidden;
 }
-
+/*
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+*/
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -174,6 +145,3 @@ body {
 }
 
 /*________________________ End Dropdown ______________________________*/
-
-
-

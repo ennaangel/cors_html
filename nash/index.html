@@ -3,75 +3,122 @@
 <head>
 <title>2x2 Nash equilibrium</title>
   <link rel="stylesheet" href="./stylesheets/own.css" type="text/css">
+  
 </head>
 <body>
   
 <section id="content">
 
-      <!-- ####################### Navbar section #######################-->
+    <!-- ####################### Navbar section #######################-->
     <div class="navbar">
-            <div class="navb">
-              <a href="https://ennaangel.github.io/cors_html/">Home</a>
-             </div>
+            <div class="navb"><a href="https://ennaangel.github.io/cors_html/">Home</a></div>
         <!--Dropdown HTML-->
              <div class="dropdown">
-              <button class="dropbtn">HTML</button>
+              <button class="dropbtnnavb"><a href="https://ennaangel.github.io/cors_html/Coding">Coding</a></button>
                 <div class="dropdown-content"> 
                     <div class="sub"> Java Experiments </div>
                       <div class="btn"><a href="https://ennaangel.github.io/cors_html/gw2_calc">Guildwars2</a></div>
                       <div class="btn"><a href="https://ennaangel.github.io/cors_html/Inspire">Inspire API</a></div>
+                      <div class="btn"><a href="https://ennaangel.github.io/cors_html/nash"> Nash equillibrium </a></div>
+                    <!--  
                     <div class="sub"> Coursera HTML course </div> 
                       <div class="btn"><a href="https://ennaangel.github.io/cors_html/mod2_sol" >Module2</a></div>
                       <div class="btn"><a href="https://ennaangel.github.io/cors_html/mod3_sol" >Module3</a></div>
                       <div class="btn"><a href="https://ennaangel.github.io/cors_html/mod4_sol" >Module4</a></div>
                       <div class="btn"><a href="https://ennaangel.github.io/cors_html/mod5_sol" >Module5</a></div>
-                 </div>
+					-->
+					<div class="sub"> Python </div>
+                      <div class="btn"><a href="https://raw.githubusercontent.com/ennaangel/cors_html/gh-pages/Python/bibanalysis.py" >BibTex analysis</a></div>
+                      <div class="btn"><a href="https://raw.githubusercontent.com/ennaangel/cors_html/gh-pages/Python/goodreads.py ">Goodreads to bibtex  </a></div>
+                 
+				 </div>
                 </div>
         
-        <!--Dropdown Python-->
+
+        <!--Dropdown Articles-->
               <div class="dropdown">
-              <button class="dropbtn">Python</button>
+              <button class="dropbtn">Articles</button>
                 <div class="dropdown-content"> 
-                    <div class="sub"> BibTex related </div>
-                      <div class="btn"><a href="https://raw.githubusercontent.com/ennaangel/cors_html/gh-pages/Python/bibanalysis.py" >Bibanalysis</a></div>
-                      <div class="btn"><a href="https://raw.githubusercontent.com/ennaangel/cors_html/gh-pages/Python/goodreads.py ">Goodreads to bibtex  </a></div>
+                    <div class="sub"> Physics </div>
+                      <div class="btn"><a href="http://fse.studenttheses.ub.rug.nl/18243/1/mPHYS_2018_VosC.pdf" >Correlation functions in a CFT dual to a Black Hole. (2018)</a></div>
+                      <div class="btn"><a href="https://nbviewer.jupyter.org/github/ennaangel/cors_html/blob/gh-pages/articles/Fundamental_constants___Kb.pdf">On the Boltzmann Constant and the redeﬁnition of the kelvin
+ </a></div> 
+                      <div class="btn"><a href="http://fse.studenttheses.ub.rug.nl/12962/1/Bachelor_Theses_Chris_Vos_cLFV.pdf ">Overview of the theoretical status of cLFV.(2015)  </a></div>
                  </div>
                 </div>
+		<!-- Art -->	
+			<div class="navb">
+                <a href="https://ennaangel.github.io/cors_html/art/">Art</a>
+             </div>
+				
         <!-- About -->
              <div class="navb">
                 <a href="https://ennaangel.github.io/cors_html/about/">About</a>
              </div>
     </div>
-<!-- ----------------------- End Navbar section  ---------------------------------- -->
-  
+    <!-- ----------------------- End Navbar section  ---------------------------------- -->
+      
   
   
 <section id="form">
 <form>
   
 <div id="field"> 
+<div id="mseq">
+Mixed Strategy <br>
+Nash Equilibrium
+</div>
 
-<div id="left">
-<div id="f1">
-<input type="number" id="0inp" class="finput" step="any">
+<div class="plopt">
+Player 2, option I
+<div class="solve" id="p2I">
+</div>
+</div>
+
+<div class="plopt">
+Player 2, option II
+<div class="solve" id="p2II">
+</div>
+</div>
+
+<div class="plopt">
+Player 1, option I
+<div class="solve" id="p1I">
+</div>
+</div>
+<div class="freward" id="f1">
+Player 1 Reward:
+<input type="number" id="0inp" class="finput" step="any"><br>
+Player 2 Reward:
 <input type="number" id="1inp" class="finput" step="any">
 </div> 
-<div id="f2">  
-<input type="number" id="2inp" class="finput" step="any">
-<input type="number" id="3inp" class="finput" step="any">
+
+<div class="freward" id="f3"> 
+Player 1 Reward:   
+<input type="number" id="4inp" class="finput" step="any"><br>
+Player 2 Reward:
+<input type="number" id="5inp" class="finput" step="any">
+  </div> 
+<div class="plopt">
+Player 1, option II
+<div class="solve" id="p1II">
 </div>
 </div>
 
-<div id="right">
-<div id="f3">    
-<input type="number" id="4inp" class="finput" step="any">
-<input type="number" id="5inp" class="finput" step="any">
-  </div> 
-<div id="f4">  
-<input type="number" id="6inp" class="finput" step="any">
+<div class="freward" id="f2">  
+Player 1 Reward:
+<input type="number" id="2inp" class="finput" step="any"><br>
+Player 2 Reward:
+<input type="number" id="3inp" class="finput" step="any">
+</div>
+
+<div class="freward" id="f4">  
+Player 1 Reward:
+<input type="number" id="6inp" class="finput" step="any"><br>
+Player 2 Reward:
 <input type="number" id="7inp" class="finput" step="any">  
 </div>  
-</div>  
+ 
   
 </div>
   
@@ -80,12 +127,20 @@
 
   
 <section>
+	<button id="bsolve" onclick="starter()">Click to solve</button>
+	<div>
+	
   <div id="equil">
+  
   </div>
+  </div>
+  
+
 </section>
  
 </section>  
 </body>
+<script src="js/scripts.js"></script> 
 </html> 
 
 

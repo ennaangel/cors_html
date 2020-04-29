@@ -116,6 +116,7 @@ body {
     background-color: #102030;
     color:#207090;
     padding: 16px;
+	padding-bottom: 15px;
     font-size: 16px;
     width: 154px;
 }
@@ -134,7 +135,7 @@ body {
     position: absolute;
     background-color: #103050;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
     z-index: 1;
 }
 

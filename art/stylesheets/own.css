@@ -54,6 +54,7 @@ body {
     /*background-color: #102030;*/
 }
 
+
 /*________________________ Begin Dropdown ______________________________*/
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -74,6 +75,39 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+
+.dropbtnnavb{
+	border: none;
+    background-color: #102030;
+	margin: 0px;
+	padding: 0px;
+}
+
+.dropbtnnavb a{
+	border: none;
+    color:#207090;
+    padding: 16px;
+    font-size: 16px;
+    width: 154px;
+    float: left;
+    overflow: hidden;
+    text-align:center;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dropdown:hover .dropbtnnavb {
+    background-color:#103050;
+}
+
+.dropdown:hover .dropbtnnavb a{
+    color:salmon;
+}
+
+.dropbtnnavb:hover a{
+	background-color: #703030;
+}
+
 /* Change color of navbar links on hover */
 .navb a:hover {
     background-color: #703030;
@@ -86,6 +120,7 @@ body {
     background-color: #102030;
     color:#207090;
     padding: 16px;
+	padding-bottom: 15px;
     font-size: 16px;
     width: 154px;
 }
@@ -96,12 +131,7 @@ body {
     float: left;
     overflow: hidden;
 }
-/*
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-*/
+
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -109,7 +139,7 @@ body {
     position: absolute;
     background-color: #103050;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
     z-index: 1;
 }
 
@@ -149,3 +179,4 @@ body {
 }
 
 /*________________________ End Dropdown ______________________________*/
+/*__End Navbar__*/

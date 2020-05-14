@@ -22,10 +22,10 @@ function starter(){
 	var np1 = 1-p1
 	console.log(p1);	
 	
-	document.getElementById("p1I").innerHTML = "P = "+parseFloat(p1).toFixed(3)
-	document.getElementById("p1II").innerHTML = "(1-P) = "+parseFloat(np1).toFixed(3)
-	document.getElementById("p2I").innerHTML = "Q = "+parseFloat(p2).toFixed(3)
-	document.getElementById("p2II").innerHTML = "(1-Q) = "+parseFloat(np2).toFixed(3)
+	document.getElementById("p1I").innerHTML = "Q = "+parseFloat(p1).toFixed(3)
+	document.getElementById("p1II").innerHTML = "(1-Q) = "+parseFloat(np1).toFixed(3)
+	document.getElementById("p2I").innerHTML = "P = "+parseFloat(p2).toFixed(3)
+	document.getElementById("p2II").innerHTML = "(1-P) = "+parseFloat(np2).toFixed(3)
 	
 	}
 

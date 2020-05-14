@@ -1,3 +1,142 @@
+/*________________________ Begin Navbar ______________________________*/
+/* Navbar stuff */
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar {
+    overflow: hidden;
+    /*background-color: #102030;*/
+}
+
+
+/*________________________ Begin Dropdown ______________________________*/
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: salmon;
+}
+
+.navb a{
+    border: none;
+    background-color: #102030;
+    color:#207090;
+    padding: 16px;
+    font-size: 16px;
+    width: 154px;
+    float: left;
+    overflow: hidden;
+    text-align:center;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.dropbtnnavb{
+	border: none;
+    background-color: #102030;
+	margin: 0px;
+	padding: 0px;
+}
+
+.dropbtnnavb a{
+	border: none;
+    color:#207090;
+    padding: 16px;
+    font-size: 16px;
+    width: 154px;
+    float: left;
+    overflow: hidden;
+    text-align:center;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dropdown:hover .dropbtnnavb {
+    background-color:#103050;
+}
+
+.dropdown:hover .dropbtnnavb a{
+    color:salmon;
+}
+
+.dropbtnnavb:hover a{
+	background-color: #703030;
+}
+
+/* Change color of navbar links on hover */
+.navb a:hover {
+    background-color: #703030;
+    color: salmon;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+    background-color: #102030;
+    color:#207090;
+    padding: 16px;
+	padding-bottom: 15px;
+    font-size: 16px;
+    width: 154px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #103050;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color:#207090;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #103050
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #703030;
+    color: salmon;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color:#103050;
+}
+
+/* Titles in dropdown */
+.sub{
+    text-align: center;
+    border-bottom: 2px solid #105070;
+    border-top: 2px solid #105070;
+    color: #207090;
+    font-size: 115%;
+}
+
+/*________________________ End Dropdown ______________________________*/
+/*__End Navbar__*/
+
 body {
   background-color: LightBlue;
 }

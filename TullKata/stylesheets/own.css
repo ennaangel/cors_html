@@ -1,6 +1,17 @@
+/*Definign colours*/
+:root{
+	--main-bg-colour: #102030;
+	--unselected-text: #207090;
+	--selected-text: salmon;
+	--higlighted-block: #703030;
+	--unselected-block: #103050;
+}
+
+
+
 body {
-    background-color:#102030;
-	background: linear-gradient(135deg,#03828a ,#102030,#102030 ,#65206d );
+    background-color:var(--main-bg-colour);
+	background: linear-gradient(135deg,#03828a ,var(--main-bg-colour),var(--main-bg-colour) ,#65206d );
 	background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -8,8 +19,8 @@ body {
 #content{
     width: 70%;
     margin: auto;
-	background-color:#102030;
-	color: salmon;	
+	background-color:var(--main-bg-colour);
+	color: var(--selected-text);	
 }
 
 #subcont{
@@ -18,32 +29,27 @@ body {
 }
 
 .combo{
-	background: linear-gradient(-135deg ,#102030,#703030 );
+	background: linear-gradient(-135deg ,var(--main-bg-colour),var(--higlighted-block) );
 }
 
 #disc{
-	color: #207090;
+	color: var(--unselected-text);
 
 	font-size: small;
 }
 
 .selectors{
-	background: linear-gradient(-135deg ,#102030,#703030 );
-	border-color: #102030;
+	background: linear-gradient(-135deg ,var(--main-bg-colour),var(--higlighted-block) );
+	border-color: var(--main-bg-colour);
 	border-style: solid;
 }
 
 /*________________________JS________________________*/
 .combos > div{ /*Direct child divs*/
 	border-top-style: solid;
-	border-color: #102030;
+	border-color: var(--main-bg-colour);
 }
 
 #
 
 /*________________________END_JS________________________*/
-
-
-
-
-

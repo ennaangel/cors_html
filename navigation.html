@@ -1,4 +1,12 @@
 <style>
+:root{
+	--main-bg-colour: #102030;
+	--unselected-text: #207090;
+	--selected-text: salmon;
+	--higlighted-block: #703030;
+	--unselected-block: #103050;
+}
+
 /*________________________ Begin Navbar ______________________________*/
 /* Navbar stuff */
 
@@ -8,20 +16,19 @@
 
 .navbar {
     overflow: hidden;
-    /*background-color: #102030;*/
 }
 
 
 /*________________________ Begin Dropdown ______________________________*/
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    color: salmon;
+    color: var(--selected-text);
 }
 
 .navb a{
     border: none;
-    background-color: #102030;
-    color:#207090;
+    background-color: var(--main-bg-colour);
+    color:var(--unselected-text);
     padding: 16px;
     font-size: 16px;
     width: 154px;
@@ -35,14 +42,14 @@
 
 .dropbtnnavb{
 	border: none;
-    background-color: #102030;
+    background-color: var(--main-bg-colour);
 	margin: 0px;
 	padding: 0px;
 }
 
 .dropbtnnavb a{
 	border: none;
-    color:#207090;
+    color:var(--unselected-text);
     padding: 16px;
     font-size: 16px;
     width: 154px;
@@ -54,28 +61,28 @@
 }
 
 .dropdown:hover .dropbtnnavb {
-    background-color:#103050;
+    background-color:var(--unselected-block);
 }
 
 .dropdown:hover .dropbtnnavb a{
-    color:salmon;
+    color:var(--selected-text);
 }
 
 .dropbtnnavb:hover a{
-	background-color: #703030;
+	background-color: var(--higlighted-block);
 }
 
 /* Change color of navbar links on hover */
 .navb a:hover {
-    background-color: #703030;
-    color: salmon;
+    background-color: var(--higlighted-block);
+    color: var(--selected-text);
 }
 
 /* Dropdown Button */
 .dropbtn {
     border: none;
-    background-color: #102030;
-    color:#207090;
+    background-color: var(--main-bg-colour);
+    color:var(--unselected-text);
     padding: 16px;
 	padding-bottom: 15px;
     font-size: 16px;
@@ -94,7 +101,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #103050;
+    background-color: var(--unselected-block);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
     z-index: 1;
@@ -103,17 +110,17 @@
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
-    color:#207090;
+    color:var(--unselected-text);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    background-color: #103050
+    background-color: var(--unselected-block)
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #703030;
-    color: salmon;
+    background-color: var(--higlighted-block);
+    color: var(--selected-text);
 }
 
 /* Show the dropdown menu on hover */
@@ -123,7 +130,7 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color:#103050;
+    background-color:var(--unselected-block);
 }
 
 /* Titles in dropdown */
@@ -131,7 +138,7 @@
     text-align: center;
     border-bottom: 2px solid #105070;
     border-top: 2px solid #105070;
-    color: #207090;
+    color: var(--unselected-text);
     font-size: 115%;
 }
 

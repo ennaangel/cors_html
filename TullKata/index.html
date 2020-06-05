@@ -2,7 +2,13 @@
 <HTML>
 <head>
 <link rel="stylesheet" href="./stylesheets/own.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<script>
+$.get("../navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
 </head>
 
 
@@ -55,6 +61,10 @@
                 <a href="https://ennaangel.github.io/cors_html/about/">About</a>
              </div>
     </div>
+	
+	
+	<div id="nav-placeholder">
+	</div>
     <!-- ----------------------- End Navbar section  ---------------------------------- -->
 <div id="subcont">
 <!--Tull section-->

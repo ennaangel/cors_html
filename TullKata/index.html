@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
-    
+<HTML>
 <head>
-    <link rel="stylesheet" href="./stylesheets/own.css" type="text/css">
+<link rel="stylesheet" href="./stylesheets/own.css" type="text/css">
+
 </head>
-    
+
+
 <body>
 <section id="content">
-    <!-- ####################### Navbar section #######################-->
+<!-- ####################### Navbar section #######################-->
     <div class="navbar">
             <div class="navb"><a href="https://ennaangel.github.io/cors_html/">Home</a></div>
         <!--Dropdown HTML-->
@@ -55,28 +56,56 @@
              </div>
     </div>
     <!-- ----------------------- End Navbar section  ---------------------------------- -->
-    <!-- Short intro -->
-    <section id="intro">
-		<div id="me">
-        Hello dear viewer. Since elementary school I have been captivated by the idea of the <i>"Uomo universale"</i>, the universal man. A person that has a knowledge in a large number of fields and also poses a wide range of skills. Therefor I wanted to understand how to build a webpage and so this page was born.
-		For me personally this means 
-		<ul>
-		<li>Learning, practicing, and teaching martial arts. </li>
-		<li>Reading books and scientific papers on different subjects like genetics, health, neuroscience, physics, artifical intelligence, networks and others. </li>
-		<li>Improving my drawing skills; mainly understanding the human figure and it's anatomy. </li>
-		</ul>
-		</div>
-		<div id="site">
-		On this website I try to combine different interests and skills of mine. So it covers subject as physics, martial arts, and art. I'm building this website from the basics to improve my knowledge on HTML, CSS, and Javascript. Therefor it also contains some javascript experiments.
-		</div>
-		<div id="CV">
-		<a id="CVlink" href='https://nbviewer.jupyter.org/github/ennaangel/cors_html/blob/gh-pages/about/ChrisVos_CV%5Beng%5D.pdf'>CV </a>
-		</div>
-    </section>
+<div id="subcont">
+<!--Tull section-->
+<div class = "selectors",id="selcont">
+Select a Tull here
+<div id="stull">
+
+<select id="tullselector">
+</select>
+</div>
+
+<div>
+<button type="button" onclick="checkit(1)">
+Let's see what happens.
+</button>
+</div>
+</div>
+
+<div id="rcombo">
+<!--- Tull Combos appear here-->
+</div>
 
 
-    
+<!--Kata sectioin-->
+<div class = "selectors",id="selkatacont">
+Or select a Kata here
+<div id="stull">
 
+<select id="kataselector">
+</select>
+</div>
+
+<div>
+<button type="button" onclick="checkit(2)">
+Let's go.
+</button>
+</div>
+</div>
+
+<div id="rkatacombo">
+<!--- Kata Combos appear here-->
+</div>
+
+
+
+<div id="disc">
+Disclaimer: Some descriptions of technigues might not be accectly the same as done in the tull or kata. This choice has been made so the description covers multiple combinations that have the same idea. In practice this means that sometimes a first will be a knife-hand or vice-versa or the combintion might miss one technigue, which in my opinion in that case is just a minor difference, while still covering the same gist as the combination.
+</div>
+</div>
 </section>
+
 </body>
-</html> 
+<script src="js/scripts.js"></script> 
+</HTML>

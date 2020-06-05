@@ -8,47 +8,41 @@ body {
 #content{
     width: 70%;
     margin: auto;
+	background-color:#102030;
+	color: salmon;	
 }
 
-/*
-.btn{
-    text-align: center;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    border-width: 5px;
-    border-color: Black;
-    background-color: White;
-}
-*/
-#intro {
-    background-color:#102030;
-    margin-top:70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: salmon;
-    padding-left:40px;
-    padding-right:40px;
-}
-#CV {
-	padding:15px;
-	width: 100%;
-	text-align:center;
+#subcont{
+	width: 50%;
+	margin-left: 5px;
 }
 
-#CVlink {
-	text-align: center;
-	padding: 10px;
-	padding-left:40px;
-    padding-right:40px;
-	background-color: #207090;
-	color: #102030;
+.combo{
+	background: linear-gradient(-135deg ,#102030,#703030 );
 }
 
-#CVlink:hover{
-	background-color:#703030;
-	color: salmon;
+#disc{
+	color: #207090;
+
+	font-size: small;
 }
+
+.selectors{
+	background: linear-gradient(-135deg ,#102030,#703030 );
+	border-color: #102030;
+	border-style: solid;
+}
+
+/*________________________JS________________________*/
+.combos > div{ /*Direct child divs*/
+	border-top-style: solid;
+	border-color: #102030;
+}
+
+#
+
+/*________________________END_JS________________________*/
+
 
 /*________________________ Begin Navbar ______________________________*/
 /* Navbar stuff */
@@ -188,3 +182,5 @@ body {
 
 /*________________________ End Dropdown ______________________________*/
 /*__End Navbar__*/
+
+

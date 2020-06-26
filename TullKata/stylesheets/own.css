@@ -24,32 +24,81 @@ body {
 }
 
 #subcont{
-	width: 50%;
-	margin-left: 5px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 10px;
+}
+
+#tullsection{
+	border: 1px solid var(--selected-text);
+}
+
+#katasection {
+	border: 1px solid var(--selected-text);
 }
 
 .combo{
 	background: linear-gradient(-135deg ,var(--main-bg-colour),var(--higlighted-block) );
+	text-indent: 10px;
 }
 
 #disc{
 	color: var(--unselected-text);
-
 	font-size: small;
 }
 
 .selectors{
-	background: linear-gradient(-135deg ,var(--main-bg-colour),var(--higlighted-block) );
-	border-color: var(--main-bg-colour);
-	border-style: solid;
+	border: 1px solid var(--selected-text);
+	border-bottom: 2px solid var(--selected-text);
+	padding-bottom: 2px;
 }
 
-/*________________________JS________________________*/
+.secttitle {
+	font-size: 300%;
+	text-align: center;
+}
+
+.tullorkata{
+	padding-left: 10px;
+	text-indent: 10px;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltipcontent {
+	visibility: hidden;
+	position: absolute;
+	z-index: 1;
+	width: 100px;
+	background-color: var(--main-bg-colour);
+	padding: 10px;
+	padding-left: 20px;
+	border-style: solid;
+	border-color: var(--selected-text);
+	border-width: 1px;
+	text-indent: 0px;
+}
+
+.tooltipcontent a{
+	float: left;
+	width: 100%;
+	color: var(--unselected-text);
+	padding-top: 3px;
+	padding-left: 5px
+}
+
+.tooltip:hover .tooltipcontent {
+	visibility: visible;	
+}
+
+
 .combos > div{ /*Direct child divs*/
 	border-top-style: solid;
 	border-color: var(--main-bg-colour);
 }
 
-#
 
 /*________________________END_JS________________________*/

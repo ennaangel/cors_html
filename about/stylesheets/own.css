@@ -21,15 +21,33 @@ body {
     background-color: White;
 }
 */
-#intro {
-    background-color:#102030;
-    margin-top:70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: salmon;
-    padding-left:40px;
-    padding-right:40px;
+.column{
+	float: left;
 }
+
+.right{
+	width: 20%;
+}
+
+.left{
+	width: 80%;
+	background-color:#102030;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.left > div {
+		padding-left: 20px;
+		padding-right: 20px;
+}
+
+#intro {
+    margin-top:70px;
+    color: salmon;
+}
+
+
+
 #CV {
 	padding:15px;
 	width: 100%;

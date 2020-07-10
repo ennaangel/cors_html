@@ -4,57 +4,19 @@
     
 <head>
     <link rel="stylesheet" href="./stylesheets/own.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+	$.get("../navigation.html", function(data){
+		$("#nav-placeholder").replaceWith(data);
+	});
+	</script>
 </head>
     
 <body>
 <section id="content">
 <!-- ####################### Navbar section #######################-->
-    <div class="navbar">
-            <div class="navb"><a href="https://ennaangel.github.io/cors_html/">Home</a></div>
-        <!--Dropdown HTML-->
-             <div class="dropdown">
-              <button class="dropbtnnavb"><a href="https://ennaangel.github.io/cors_html/Coding">Coding</a></button>
-                <div class="dropdown-content"> 
-                    <div class="sub"> Java Experiments </div>
-                      <div class="btn"><a href="https://ennaangel.github.io/cors_html/gw2_calc">Guildwars2</a></div>
-                      <div class="btn"><a href="https://ennaangel.github.io/cors_html/Inspire">Inspire API</a></div>
-                      <div class="btn"><a href="https://ennaangel.github.io/cors_html/nash"> Nash equillibrium </a></div>
-                    <!--  
-                    <div class="sub"> Coursera HTML course </div> 
-                      <div class="btn"><a href="https://ennaangel.github.io/cors_html/mod2_sol" >Module2</a></div>
-                      <div class="btn"><a href="https://ennaangel.github.io/cors_html/mod3_sol" >Module3</a></div>
-                      <div class="btn"><a href="https://ennaangel.github.io/cors_html/mod4_sol" >Module4</a></div>
-                      <div class="btn"><a href="https://ennaangel.github.io/cors_html/mod5_sol" >Module5</a></div>
-					-->
-					<div class="sub"> Python </div>
-                      <div class="btn"><a href="https://raw.githubusercontent.com/ennaangel/cors_html/gh-pages/Python/bibanalysis.py" >BibTex analysis</a></div>
-                      <div class="btn"><a href="https://raw.githubusercontent.com/ennaangel/cors_html/gh-pages/Python/goodreads.py ">Goodreads to bibtex  </a></div>
-                 
-				 </div>
-                </div>
-        
-
-        <!--Dropdown Articles-->
-              <div class="dropdown">
-              <button class="dropbtn">Articles</button>
-                <div class="dropdown-content"> 
-                    <div class="sub"> Physics </div>
-                      <div class="btn"><a href="http://fse.studenttheses.ub.rug.nl/18243/1/mPHYS_2018_VosC.pdf" >Correlation functions in a CFT dual to a Black Hole. (2018)</a></div>
-                      <div class="btn"><a href="https://nbviewer.jupyter.org/github/ennaangel/cors_html/blob/gh-pages/articles/Fundamental_constants___Kb.pdf">On the Boltzmann Constant and the redeﬁnition of the kelvin
- </a></div> 
-                      <div class="btn"><a href="http://fse.studenttheses.ub.rug.nl/12962/1/Bachelor_Theses_Chris_Vos_cLFV.pdf ">Overview of the theoretical status of cLFV.(2015)  </a></div>
-                 </div>
-                </div>
-		<!-- Art -->	
-			<div class="navb">
-                <a href="https://ennaangel.github.io/cors_html/art/">Art</a>
-             </div>
-				
-        <!-- About -->
-             <div class="navb">
-                <a href="https://ennaangel.github.io/cors_html/about/">About</a>
-             </div>
-    </div>
+	<div id="nav-placeholder">
+	</div>
     <!-- ----------------------- End Navbar section  ---------------------------------- -->
     <!-- Put short intro -->
     <section id="scont">

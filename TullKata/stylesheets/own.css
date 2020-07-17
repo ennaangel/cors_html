@@ -159,7 +159,11 @@ select {
 	font-size:200%;
 	}
 	
-	.tullorkata .tooltipcontent {
+	.tullorkata {
 		font-size:150%;
+	}
+	.tooltipcontent {
+		font-size:150%;
+		width: 200px;
 	}
 }

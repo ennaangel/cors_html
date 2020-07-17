@@ -5,6 +5,8 @@
 	--selected-text: salmon;
 	--higlighted-block: #703030;
 	--unselected-block: #103050;
+	--widthofblock: 14%; /* 154px */
+	--widthofsubblock: 100%; /* 154px */
 }
 
 /*________________________ Begin Navbar ______________________________*/
@@ -31,7 +33,7 @@
     color:var(--unselected-text);
     padding: 16px;
     font-size: 16px;
-    width: 154px;
+    width: var(--widthofblock);
     float: left;
     overflow: hidden;
     text-align:center;
@@ -52,7 +54,7 @@
     color:var(--unselected-text);
     padding: 16px;
     font-size: 16px;
-    width: 154px;
+    width: var(--widthofsubblock);
     float: left;
     overflow: hidden;
     text-align:center;
@@ -84,9 +86,9 @@
     background-color: var(--main-bg-colour);
     color:var(--unselected-text);
     padding: 16px;
-	padding-bottom: 15px;
+	padding-bottom: 16px;
     font-size: 16px;
-    width: 154px;
+    width: var(--widthofsubblock);
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -94,6 +96,7 @@
 .dropdown {
     float: left;
     overflow: hidden;
+	width: var(--widthofblock); 
 }
 
 
@@ -150,7 +153,10 @@
             <div class="navb"><a href="https://ennaangel.github.io/cors_html/">Home</a></div>
         <!--Dropdown HTML-->
              <div class="dropdown">
+			 <button class="dropbtn">Coding</button>
+			 <!--
               <button class="dropbtnnavb"><a href="https://ennaangel.github.io/cors_html/Coding">Coding</a></button>
+			  -->
                 <div class="dropdown-content"> 
                     <div class="sub"> Java Experiments </div>
 					  <div class="btn"><a href="https://ennaangel.github.io/cors_html/TullKata">Tulls and katas</a></div>

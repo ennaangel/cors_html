@@ -108,13 +108,31 @@ body {
 @media only screen and (max-width: 600px) {
 	#content {
 		width: 100%;
-  }
+	}
+}
+@media only screen and (max-width: 800px) {
+  	#subcont{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-gap: 10px;
 }
 
-@media only screen and (max-device-width: 1200px) {
+@media only screen and (max-device-width: 800px) {
+	#content {
+		width: 100%;
+	}
+	
 	#subcont{
+	width: 70%
 	display: grid;
 	grid-template-columns: 100%;
 	grid-gap: 10px;
   }
+  .selectors{
+	font-size: 200%;
+  }
+  .secttitle {
+	font-size: 400%;
+}
+  
 }

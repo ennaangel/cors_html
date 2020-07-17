@@ -56,6 +56,22 @@ body {
 .secttitle {
 	font-size: 300%;
 	text-align: center;
+	
+}
+
+select {
+	width:100%;
+}
+
+.gobutton {
+	width: 98%;
+	padding: 1%;
+	margin: 1%;
+	background-color: var(--selected-text);
+	color: var(--main-bg-colour);
+	border: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size:125%;
 }
 
 .tullorkata{
@@ -127,12 +143,19 @@ body {
 	display: grid;
 	grid-template-columns: 100%;
 	grid-gap: 10px;
-  }
+	}
   
   .selectors{
 	font-size: 200%;
-  }
+	}
   .secttitle {
-	font-size: 400%;
-} 
+	font-size: 300%;
+	}
+	select {
+	font-size:200%;
+	}
+
+	.gobutton {
+	font-size:200%;
+	}
 }

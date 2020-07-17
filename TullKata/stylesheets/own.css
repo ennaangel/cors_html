@@ -116,6 +116,7 @@ body {
 	grid-template-columns: 100%;
 	grid-gap: 10px;
 }
+}
 
 @media only screen and (max-device-width: 1200px) {
 	#content {

@@ -158,4 +158,8 @@ select {
 	.gobutton {
 	font-size:200%;
 	}
+	
+	.tullorkata .tooltipcontent {
+		font-size:150%;
+	}
 }

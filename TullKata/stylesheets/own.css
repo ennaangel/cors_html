@@ -121,18 +121,17 @@ body {
 	#content {
 		width: 100%;
 	}
-	
 	#subcont{
-	width: 70%
+	width: 70%;
 	display: grid;
 	grid-template-columns: 100%;
 	grid-gap: 10px;
   }
+  
   .selectors{
 	font-size: 200%;
   }
   .secttitle {
 	font-size: 400%;
-}
-  
+} 
 }

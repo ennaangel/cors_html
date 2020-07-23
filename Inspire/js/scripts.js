@@ -107,12 +107,11 @@ var xhttp = new XMLHttpRequest();
 		
 		//make colour change every second div (kan vast cleaner)
 		if (i%2 == 0){
-		    	aaDiv.style.background="WhiteSmoke ";
-			abDiv.style.background="WhiteSmoke ";
-			aDiv.style.background="WhiteSmoke ";
-			anDiv.style.background="WhiteSmoke ";
+			aDiv.className+= "divtwo";
 		    }
-		
+		else{
+			aDiv.className+= "divone";
+		}
 
 		document.getElementById(loc).appendChild(aDiv);
 	};
